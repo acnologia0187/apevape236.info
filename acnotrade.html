@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silk Road</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+
+<style>
+body {font-family: "Lato", sans-serif;}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 9, 9, 9.9);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+    
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    
+</head>
+<body>
+  
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <img src="silk-logo.png" height="5%" width="85%" >
+  <a href="acnotrade.html">Home</a>
+  <a href="sell.html"><img src="sell.png" height="13%" width="13%">Sell</a>
+  <a href="get_btc.html"><img src="btc.png" height="13%" width="13%">Get ₿itcoin</a>
+  <a href="sell_btc.html"><img src="btc.png" height="13%" width="13%">Sell ₿itcoin</a>
+     <a href="nicotine.html"><img src="vape.png" height="13%" width="13%">Nicotine</a>
+</div>
+
+
+<div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="silk-logo.png" height="50%" width="50%">
+            
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+<div class="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <h1>Welcome to the Silk Road anonymous marketplace</h1>
+    <h1>Where you can buy and sell anything anonymously</h1>
+    <h3>NEW</h3>
+    <h1>______________________________________________________</h1>
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSerdXiLDMkONwbPUbnQ_CbgUILZcVKi5DgCyMBe4Ir-l2ol1g/viewform?usp=sf_link">
+        <img src="vape.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">YIBLA 6500 DISPOSABLE</p>
+    <p class="product-price">₿25.00</p>
+        <p class="product-price">flavor:rainbow slush</p>
+        
+</div>
+
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSUPCDQbmsQyjfjcluuoNrfxmUMn-6SzFNLscNxQOyCYHv1g/viewform">
+        <img src="gow.jpg" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">God of war remastered | ps4</p>
+    <p class="product-price">₿20.00</p>
+        
+</div>
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOwYcQHCauwohnMugcGQvZTL0Xjh9xhmOM2OOIUtDsj0x4jA/viewform">
+        <img src="skibidi_rizz.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">Go0Fy AHH skibidi rizz dealer</p>
+    <p class="product-price">₿19.99</p>
+</div>
+
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSftRBwZcKjQ09P_QNpRhA-RrfbEHNPuNdoU2kRgW6Va4_cZsQ/viewform">
+        <img src="992.jpg" height="15%" width="15%" alt="Description of Product 2">
+    </a>
+    <p class="product-title">My cat :)</p>
+    <p class="product-price">₿19.99</p>
+</div>
+
+
+
+    <h3>All</h3>
+    <h1>_______________________________________________________</h1>
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSerdXiLDMkONwbPUbnQ_CbgUILZcVKi5DgCyMBe4Ir-l2ol1g/viewform?usp=sf_link">
+        <img src="vape.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">YIBLA 6500 DISPOSABLE</p>
+    <p class="product-price">₿25.00</p>
+        <p class="product-price">flavor:rainbow slush</p>
+        
+</div>
+
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSUPCDQbmsQyjfjcluuoNrfxmUMn-6SzFNLscNxQOyCYHv1g/viewform">
+        <img src="gow.jpg" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">God of war remastered | ps4</p>
+    <p class="product-price">₿20.00</p>
+        
+</div>
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOwYcQHCauwohnMugcGQvZTL0Xjh9xhmOM2OOIUtDsj0x4jA/viewform">
+        <img src="skibidi_rizz.png" height="10%" width="10%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">Go0Fy AHH skibidi rizz dealer</p>
+    <p class="product-price">₿19.99</p>
+</div>
+
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSftRBwZcKjQ09P_QNpRhA-RrfbEHNPuNdoU2kRgW6Va4_cZsQ/viewform">
+        <img src="992.jpg" height="15%" width="15%" alt="Description of Product 2">
+    </a>
+    <p class="product-title">My cat :)</p>
+    <p class="product-price">₿19.99</p>
+</div>
+
+</div>
+   
+<script src="script.js"></script>
+   
+     
+</body>
+</html> 

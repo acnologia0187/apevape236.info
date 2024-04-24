@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silk Road</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+    
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+</style>
+    
+</head>
+<body>
+<div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="silk-logo.png" height="40%" width="40%">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <img src="silk-logo.png" height="5%" width="85%" >
+  <a href="acnotrade.html">Home</a>
+  <a href="sell.html"><img src="sell.png" height="13%" width="13%">Sell</a>
+  <a href="get_btc.html"><img src="btc.png" height="13%" width="13%">Get ₿itcoin</a>
+  <a href="sell_btc.html"><img src="btc.png" height="13%" width="13%">Sell ₿itcoin</a>
+</div>
+
+
+<div class="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <h1>Get Bitcoin</h1>
+    
+    <h1>______________________________________________________</h1>
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfa3Ufayxjk4tQHkPbzjUPQauyac6uE4NTjOu_sPRjfORbDOQ/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿1</p>
+    <p class="product-price">$1.99</p>
+</div>
+
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoh7c7ffrwjOvwUi6SN1a-d8icsJfVkj8um0S5DXFf2y-zbQ/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 2">
+    </a>
+    <p class="product-title">₿5</p>
+    <p class="product-price">$5.99</p>
+</div>
+
+
+
+    
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScwIJiD4n7mgJwUjYCWa1m-xavLglixrOvBOUNcxjoW7ofc3A/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿10</p>
+    <p class="product-price">$10.99</p>
+</div>
+
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKRNNB4SIqfpeeeOF7vhDbw7C9nU6w-Ifl3wvy4kGQZgXuhg/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 2">
+    </a>
+    <p class="product-title">₿20</p>
+    <p class="product-price">$20.99</p>
+</div>
+    <br>
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWKvDGMuRq88c-s9z2vOKRoGUobRNmTCbPSoS67U0qTOht9Q/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿50</p>
+    <p class="product-price">$50.99</p>
+</div>
+    <div class="product">
+    <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSddAjOLmmuvJrJeSD8sll9yBC5brMTiqnoPHj4H_NxO60QCJQ/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿100</p>
+    <p class="product-price">$100.99</p>
+</div>
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpwoTyI-C5Ub_k96uXqaLCFZSmszwqCmTMaiqyhQDbCcMxbg/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿500</p>
+    <p class="product-price">$500.99</p>
+</div>
+    <div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3txCnbyPiSlr6Bxq-xdYhQyvyTT6F8a5cD4fwFWkIAh9_dQ/viewform">
+        <img src="btc.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">₿1,000</p>
+    <p class="product-price">$1,000.99</p>
+</div>
+</div>
+   <script src="script.js"></script>
+
+   
+     
+</body>
+</html>

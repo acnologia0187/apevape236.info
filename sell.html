@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silk Road</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+    
+
+</style>
+    
+</head>
+<body>
+<div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="silk-logo.png" height="40%" width="40%">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+<div class="sidebar">
+    <img src="silk-logo.png" height="7%" width="97%" >
+  <a href="acnotrade.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="sell.html"><img src="sell.png" height="20%" width="20%"> Sell</a>
+</div>
+
+<div class="main">
+    <h1>Sell You Product</h1>
+    
+    <h1>______________________________________________________</h1>
+<div class="product">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpRy7DoIAs-_BzSID19BTpbOy-M1slqk4DqIma70a0j0g5-Q/viewform">
+        <img src="sell.png" height="15%" width="15%" alt="Description of Product 1">
+    </a>
+    <p class="product-title">Sell</p>
+    
+</div>
+
+
+
+    
+</div>
+   
+
+   <script src="script.js"></script>
+     
+</body>
+</html>
